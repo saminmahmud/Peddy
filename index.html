@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon">
+  <title>Peddy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#ffffff]">
+  
+    <!-- header -->
+    <header class="border-b-2">
+        <div class="px-3 py-3  md:max-w-[90%] md:px-0 md:m-auto">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center justify-center gap-2">
+                    <img src="images/logo.webp" alt="logo">
+                    <h1 class="text-2xl font-bold">Peddy</h1>
+                </div>
+                
+                <i id="menu-toggle" class="fa-solid fa-bars text-2xl md:hidden cursor-pointer"></i>
+                <ul class="desktop-menu hidden md:flex md:justify-center md:items-center md:gap-7">
+                    <li class="hover:font-bold"><a href="/">Home</a></li>
+                    <li class="hover:font-bold"><a href="/">Shop</a></li>
+                    <li class="hover:font-bold"><a href="/">Contact</a></li>
+                </ul>
+                <i class="fa-regular fa-user hidden md:block p-2 border-2 rounded-full"></i>
+            </div>
+            <ul id="mobile-menu" class="md:hidden hidden bg-slate-400 rounded-lg p-5 m-2  flex-col justify-center items-center gap-7">
+                <li class="hover:font-bold"><a href="/">Home</a></li>
+                <li class="hover:font-bold"><a href="/">Shop</a></li>
+                <li class="hover:font-bold"><a href="/">Contact</a></li>
+                <li class="hover:font-bold"><i class="fa-regular fa-user p-2 border rounded-full"></i></li>
+            </ul>
+            
+        </div>
+    </header>
+
+    <!-- hero -->
+    <section class="px-3 my-6">
+        <div class=" md:max-w-[70%] lg:max-w-[60%] m-auto space-y-10">
+            <div class="text-center space-y-3">
+                <h3 class="text-gray-500 font-semibold">Bringing Families Together ❤️‍🔥 </h3>
+                <h1 class="text-3xl font-bold md:text-5xl">Your Path to Adoption Starts Here</h1>
+                <p>Every pet deserves a loving home, and every family deserves a furry friend. Explore our wide range of adorable pets ready for adoption, and find the perfect companion to bring joy and warmth into your life.</p>
+                <div><a href="#adopt" class="px-3 py-2 bg-teal-700 text-white rounded-md border-none">View More</a></div>
+            </div>
+            <img src="images/pet.webp" alt="" srcset="">
+        </div>
+    </section>
+
+    <!--  Adopt-->
+    <section id="adopt" class="px-3 my-6">
+        <div class="md:max-w-[90%] md:m-auto space-y-5">
+            <div class="m-auto text-center md:w-[600px] space-y-1 md:space-y-3">
+                <h1 class="text-2xl md:text-4xl font-bold ">Adopt  Your  Best Friend</h1>
+                <p class="text-sm text-gray-500">Every pet has a unique story, and they are ready to share it with you! Explore our wonderful selection of furry friends and discover the joy of companionship that awaits you through adoption..</p>
+            </div>
+
+            <div id="show_all_categories" class=" grid grid-cols-2 gap-3 md:grid-cols-4 lg:gap-40">
+                <!-- AllCategories -->
+
+            </div>
+
+            <div class="flex justify-between items-center">
+                <h1 class="text-md md:text-xl font-bold">Best Deal For you</h1>
+                <div id="sort-btn"><button id="sort-btn-btn" class="px-3 py-1 bg-teal-700 text-white rounded-md border-none">Sort By Price</button></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- pets -->
+    <section class="px-3 mt-8 mb-28">
+        <div class="md:max-w-[90%] m-auto  lg:grid lg:grid-cols-12 lg:gap-1">
+
+            <div id="show_all_pets" class="grid gap-5 grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-3 lg:col-span-10 lg:gap-2 xl:gap-3">
+                <!-- AllPets -->
+
+            </div>
+
+            <div class="col-span-2 ">
+                <div id="likediv" class="  flex flex-wrap gap-6 justify-center items-center mt-3 lg:mt-0 lg:flex-wrap lg:justify-center lg:gap-3">
+                    <!-- Likediv -->
+                    <!-- <div><img class="w-[100px] lg:w-[75px]" src="images/Rectangle 1.png" alt=""></div>
+                    <div><img class="w-[100px] lg:w-[75px]" src="images/Rectangle 1.png" alt=""></div>
+                    <div><img class="w-[100px] lg:w-[75px]" src="images/Rectangle 1.png" alt=""></div>
+                    <div><img class="w-[100px] lg:w-[75px]" src="images/Rectangle 1.png" alt=""></div>
+                    <div><img class="w-[100px] lg:w-[75px]" src="images/Rectangle 1.png" alt=""></div>
+                    <div><img class="w-[100px] lg:w-[75px]" src="images/Rectangle 1.png" alt=""></div> -->
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-black text-white">
+        <div class="px-3 py-10 md:max-w-[90%] m-auto space-y-5 sm:space-y-0 sm:flex sm:justify-between sm:flex-wrap sm:gap-5">
+
+            <div class="space-y-2 ">
+                <div class="flex items-center gap-2">
+                    <img src="images/logo.webp" alt="logo">
+                    <h1 class="text-2xl font-bold">Peddy</h1>
+                </div>
+                <div>
+                    <p class="text-gray-400 text-sm">Location: av. Washington 165, NY CA</p>
+                    <p class="text-gray-400 text-sm">54003</p>
+                    <p class="text-gray-400 text-sm">Phone: +31 85 964 47 25</p>
+                    <p class="text-gray-400 text-sm">Email: info@gmail.com</p>
+                    <p class="text-gray-400 text-sm">Openings hours: 9.00 AM - 5.00 PM</p>
+                </div>
+            </div>
+
+            <div class="space-y-2 ">
+                <div>
+                    <h1 class="text-lg font-bold">Useful Links</h1>
+                </div>
+                <div>
+                    <ul class="text-gray-400">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">About Us</a></li>
+                        <li><a href="/">Animals</a></li>
+                        <li><a href="/">Foundation</a></li>
+                        <li><a href="/">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="space-y-2 ">
+                <div>
+                    <h1 class="text-lg font-bold">Drop a Message</h1>
+                </div>
+                <div>
+                    <form action="" class="flex justify-start flex-col gap-2">
+                        <input class="max-w-[10em] rounded-md px-2 py-2 bg-gray-900 border border-gray-600" placeholder=" Enter your email" type="email" name="" id="">
+                        <input class="bg-teal-700 max-w-[10em] rounded-md py-2" type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- dialog  -->
+    <dialog id="my_modal_5" class="border rounded-md m-auto">
+
+        <!-- <div class="p-3 space-y-3 bottom-2">
+            <img class="w-full" src="images/card_pic.png" alt="">
+            <div class="border-b-2 pb-3">
+                <h1>Mister Tartosh</h1>
+                <div class="sm:grid sm:grid-cols-2 sm:grid-flow-row">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-people-line"></i>
+                        <p>Breed: <span>Golder retriever</span></p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-regular fa-calendar"></i>
+                        <p>Birth: <span>2024</span></p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-venus-mars"></i>
+                        <p>Gender: <span>Male</span></p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <p>Price: <span>199$</span></p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-syringe"></i>
+                        <p>Vaccinated status: <span>Partially</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h1>Details Information</h1>
+                <p class="max-w-[20em]">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+The point of using is that it has a more-or-less normal distribution of letters, as opposed to using.
+                </p>
+            </div>
+
+            <div class="modal-action">
+                <button onclick="my_modal_5.close()" class="w-full bg-teal-400 btn border py-2 px-4 rounded-md">Close</button>
+            </div>
+        </div> -->
+        
+    </dialog>
+
+    <dialog id="adopt_modal" class="max-w-sm mx-auto rounded-lg p-6 shadow-lg">
+        <div class=" space-y-3">
+            <div>
+                <img class="w-full h-auto rounded-lg" src="images/Adopt.jpg" alt="">
+            </div>
+            <div class="time-count flex justify-center items-center border-2 rounded-full w-14 h-14 m-auto text-2xl font-bold">
+                3
+            </div>
+        </div>
+    </dialog>
+    
+    <script src="js/pets.js"></script>
+    <script src="js/categoty.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
